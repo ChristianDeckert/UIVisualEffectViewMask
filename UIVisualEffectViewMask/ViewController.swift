@@ -8,12 +8,12 @@
 
 import UIKit
 
-final class ShapeLayerView: UIView {
-    var shapeLayer: CAShapeLayer! {
+public final class ShapeLayerView: UIView {
+    public var shapeLayer: CAShapeLayer! {
         return layer as? CAShapeLayer
     }
     
-    override class var layerClass: AnyClass {
+    override public class var layerClass: AnyClass {
         return CAShapeLayer.self
     }
 }

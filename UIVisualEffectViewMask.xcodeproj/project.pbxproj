@@ -15,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA6CE32E212C03350056887C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AA6CE32F212C03350056887C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AA7FDAFC212BFF0C00467C14 /* UIVisualEffectViewMask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIVisualEffectViewMask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7FDAFF212BFF0C00467C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA7FDB01212BFF0C00467C14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		AA7FDAF3212BFF0C00467C14 = {
 			isa = PBXGroup;
 			children = (
+				AA6CE32E212C03350056887C /* LICENSE */,
+				AA6CE32F212C03350056887C /* README.md */,
 				AA7FDAFE212BFF0C00467C14 /* UIVisualEffectViewMask */,
 				AA7FDAFD212BFF0C00467C14 /* Products */,
 			);
