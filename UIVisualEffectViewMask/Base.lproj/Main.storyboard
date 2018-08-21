@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIVisualEffectViewMask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macOS-Mojave-Night-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="QHv-0A-3YQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0U-f5-cTI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bbx-OA-BMo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P0U-f5-cTI" firstAttribute="height" secondItem="QHv-0A-3YQ" secondAttribute="height" id="1cN-xF-b2p"/>
+                            <constraint firstItem="QHv-0A-3YQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4SB-3v-rzg"/>
+                            <constraint firstItem="QHv-0A-3YQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="GfK-9V-n8U"/>
+                            <constraint firstItem="QHv-0A-3YQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YqS-kT-X01"/>
+                            <constraint firstItem="P0U-f5-cTI" firstAttribute="centerY" secondItem="QHv-0A-3YQ" secondAttribute="centerY" id="e7K-Op-onR"/>
+                            <constraint firstItem="P0U-f5-cTI" firstAttribute="centerX" secondItem="QHv-0A-3YQ" secondAttribute="centerX" id="fe5-zC-7FD"/>
+                            <constraint firstItem="P0U-f5-cTI" firstAttribute="width" secondItem="QHv-0A-3YQ" secondAttribute="width" id="flK-Ki-PvW"/>
+                            <constraint firstItem="QHv-0A-3YQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="huG-mb-kyV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="P0U-f5-cTI" id="AbS-vM-sS8"/>
+                        <outlet property="visualEffectsView" destination="P0U-f5-cTI" id="FNw-by-vdB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="macOS-Mojave-Night-wallpaper" width="5120" height="2880"/>
+    </resources>
+</document>
